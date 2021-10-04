@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheat3</title>
+</head>
+<body>
+    <h1>Coronavirus Intake Form for attend class</h1>
+    <p style="font-size:12px">
+    For all of our safety please fill this out 24 hourse prior to each class (until further notic).Be sure that the information you'll give is accurate and complete.Please get immediate medical attention if you have any of the severe COVID-19 signs.
+    </p>
+    <form action="newpage.html">
+        <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" required>
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" maxlength="6">
+          <br>
+          Date of Birth:<br>
+          <input type="date" name="date"  max="01-01-2003" >
+          <br>
+          Phone:<br>
+          <input type="tel" name="phone" autocomplete="No" >
+          <br>
+          Email:<br>
+          <input type="email" name="Email" autocomplete="No" required>
+          <br>
+          Do you have "تطمئن-تباعد-توكلنا" Apps in your phone:
+          <input type="radio" name="Apps"  value="Yes" required>Yes
+          <input type="radio" name="Apps"  value="No" required>No
+        </fieldset>
+
+        <fieldset>
+            <legend>Class information:</legend>
+            Choose class:
+            <input list="class" name="Classes" >
+            <datalist id="class">
+             <option value="204IT:Web programming">
+             <option value="201CS:programming1">
+             <option value="202Cs:programming2">
+             <option value="412Cs:computer ethic">
+            </datalist>
+            <br>
+            please explain why you need to attand lab <br>
+            <textarea name="explain" id="explain" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Heath Information:</legend>
+            How healthy do you feel in general?<br>
+            0<input type="range" name="heath" min="0" max="10" value="5">10
+            <br>
+            Check the symptoms that you have experienced in the PAST Week
+            <input type="checkbox" name="fever" >Fever/Chills<br>
+            <input type="checkbox" name="Headaches" >Headaches<br>
+            <input type="checkbox" name="Coughing" >Coughing<br>
+            <input type="checkbox" name="Shorness" >Shorness of breath<br>
+            <input type="checkbox" name="Recent" >Recent loss of sense of smell or taste<br>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Send">
+    </form>
+      
+      
+</body>
+</html>
