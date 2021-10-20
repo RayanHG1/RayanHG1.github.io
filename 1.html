@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Mode(colorMode, textColor) {
+
+            document.body.style.backgroundColor = String(colorMode);
+            document.body.style.color = String(textColor);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="Mode('black','white')">Dark Mode</button>
+    <button onclick="Mode('white','black')">Light Mode</button>
+    <h1>This is heading1</h1>
+</body>
+
+</html>
