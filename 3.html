@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function BIM() {
+
+            var w = document.getElementById("w").value;
+            var h = document.getElementById("h").value;
+            var BIMS = w / ((h / 100) * (h / 100));
+            if (BIMS.toFixed(1) < 18.5) {
+                document.getElementById("M").innerHTML = BIMS;
+                document.getElementById("M2").innerHTML = "Underweght";
+
+            } else if (BIMS.toFixed(1) >= 18.5 && BIMS <= 24.9) {
+                document.getElementById("M").innerHTML = BIMS;
+                document.getElementById("M2").innerHTML = "healthy Weight";
+
+            } else if (BIMS.toFixed(1) >= 25.9 && BIMS <= 29.9) {
+                document.getElementById("M").innerHTML = BIMS;
+                document.getElementById("M2").innerHTML = "Overweght";
+
+            }
+
+            alert(BIMS.toFixed(1));
+
+        }
+    </script>
+</head>
+
+<body>
+    <label for=""> Your Weight(Kg):</label>
+    <input type="text" id="w"><br><br> <br>
+    <label for=""> Your height(cm):</label>
+    <input type="text" id="h"><br>
+
+
+    <button onclick="BIM()">calculate BMI </button>
+    <p>Your BIM:<span id="M"></span></p>
+    <p>This Means :Your BIM :<span id="M2"></span></p>
+</body>
+
+</html>
